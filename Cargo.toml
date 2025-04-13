@@ -1,0 +1,22 @@
+[package]
+name = "vui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+log = "0.4"
+vello = "0.4.0"
+anyhow = "1.0.96"
+pollster = "0.4.0"
+winit = "0.30.9"
+parley = { path = "../parley/parley", default-features = true, features = [
+    "accesskit",
+] }
+accesskit = "0.18"
+accesskit_winit = "0.24"
+
+[target.'cfg(target_os = "android")'.dependencies]
+winit = { version = "0.30.9", features = ["android-native-activity"] }
+
+[target.'cfg(any(target_os = "windows", target_os = "macos", target_os = "linux"))'.dependencies]
+clipboard-rs = "0.2.4"
