@@ -1,4 +1,4 @@
-use rui::*;
+use vui::*;
 
 #[derive(Debug, Default)]
 struct MyState {

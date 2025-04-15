@@ -82,19 +82,21 @@ pub fn toggle_with_config(on: impl Binding<bool>, config: ToggleConfig) -> impl 
 
             zstack((
                 // Background rectangle
-                rectangle(if is_on {
-                    config.background_on
-                } else {
-                    config.background_off
-                })
-                .corner_radius(config.height / 2.0) // Make corners perfectly round
-                .sized((config.width, config.height))
-                .tap(move |ctx| {
-                    on.with_mut(ctx, |b| *b = !*b);
-                }),
+                rectangle()
+                    .color(if is_on {
+                        config.background_on
+                    } else {
+                        config.background_off
+                    })
+                    .corner_radius(config.height / 2.0) // Make corners perfectly round
+                    .sized((config.width, config.height))
+                    .tap(move |ctx| {
+                        on.with_mut(ctx, |b| *b = !*b);
+                    }),
                 // .hover_cursor(CursorStyle::Pointer), // Add pointer cursor on hover
                 // Knob circle
-                circle(CYAN)
+                circle()
+                    .color(CYAN)
                     .color(config.knob_color)
                     .sized((knob_size, knob_size))
                     .offset((ctx[animation] * travel_distance + config.edge, config.edge)), // .shadow(2.0, [0.0, 1.0], Color::BLACK.with_alpha(0.1)), // Add subtle shadow

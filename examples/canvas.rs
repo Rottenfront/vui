@@ -1,4 +1,4 @@
-use rui::*;
+use vui::*;
 
 fn main() {
     let mut data = Vec::new();

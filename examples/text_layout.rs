@@ -1,4 +1,4 @@
-use rui::*;
+use vui::*;
 
 fn main() {
     canvas(|_cx, rect, vger| {

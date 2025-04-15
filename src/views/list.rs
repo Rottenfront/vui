@@ -197,8 +197,8 @@ where
 /// For example:
 ///
 /// ```no_run
-/// # use rui::*;
-/// rui(list(vec![1, 2, 3], |i| {
+/// # use vui::*;
+/// vui(list(vec![1, 2, 3], |i| {
 ///     hstack((
 ///         circle(),
 ///         text(&format!("{:?}", i))

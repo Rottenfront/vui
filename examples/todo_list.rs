@@ -1,4 +1,4 @@
-use rui::*;
+use vui::*;
 
 fn add_button(todos: impl Binding<Vec<String>>) -> impl View {
     state(String::new, move |name, _| {

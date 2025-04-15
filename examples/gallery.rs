@@ -1,4 +1,4 @@
-use rui::*;
+use vui::*;
 
 fn button_example() -> impl View {
     hstack((
@@ -41,7 +41,7 @@ fn text_editor_example() -> impl View {
 
 fn main() {
     vstack((
-        "rui widget gallery".padding(10.0),
+        "vui widget gallery".padding(10.0),
         button_example(),
         slider_example(),
         knob_example(),
@@ -49,6 +49,6 @@ fn main() {
         text_editor_example(),
     ))
     .padding(Auto)
-    .window_title("rui widget gallery")
+    .window_title("vui widget gallery")
     .run()
 }

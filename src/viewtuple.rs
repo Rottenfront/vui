@@ -1,6 +1,6 @@
 use crate::*;
 
-/// Allows rui to iterate over a tuple of `Views`.
+/// Allows vui to iterate over a tuple of `Views`.
 pub trait ViewTuple: Clone {
     fn foreach_view<F: FnMut(&dyn DynView)>(&self, f: &mut F);
     fn foreach_view_rev<F: FnMut(&dyn DynView)>(&self, f: &mut F);

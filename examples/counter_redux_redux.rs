@@ -1,4 +1,4 @@
-use rui::*;
+use vui::*;
 
 // This example shows how to nest a redux inside another redux.
 

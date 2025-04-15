@@ -1,4 +1,4 @@
-use rui::*;
+use vui::*;
 
 fn main() {
     "this is a test"

@@ -64,9 +64,9 @@ impl DynView for Circle {
 }
 
 /// Renders a circle which expands to fill available space.
-pub fn circle(brush: impl Into<Brush>) -> Circle {
+pub fn circle() -> Circle {
     Circle {
-        paint: brush.into(),
+        paint: AZURE_HIGHLIGHT.into(),
     }
 }
 
@@ -140,9 +140,9 @@ impl DynView for Rectangle {
 }
 
 /// Renders a rectangle which expands to fill available space.
-pub fn rectangle(color: Color) -> Rectangle {
+pub fn rectangle() -> Rectangle {
     Rectangle {
         corner_radius: 0.0,
-        paint: color.into(),
+        paint: AZURE_HIGHLIGHT.into(),
     }
 }

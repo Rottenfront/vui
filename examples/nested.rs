@@ -1,4 +1,4 @@
-use rui::*;
+use vui::*;
 
 fn my_rectangle() -> impl View {
     rectangle()

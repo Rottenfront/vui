@@ -20,14 +20,15 @@ pub fn button<A: 'static, F: Fn(&mut Context) -> A + 'static + Clone>(
             view.clone()
                 .padding(Auto)
                 .background(
-                    rectangle(if ctx[s].down {
-                        BUTTON_DOWN_COLOR
-                    } else if ctx[s].hovered {
-                        BUTTON_HOVER_COLOR
-                    } else {
-                        BUTTON_BACKGROUND_COLOR
-                    })
-                    .corner_radius(BUTTON_CORNER_RADIUS),
+                    rectangle()
+                        .color(if ctx[s].down {
+                            BUTTON_DOWN_COLOR
+                        } else if ctx[s].hovered {
+                            BUTTON_HOVER_COLOR
+                        } else {
+                            BUTTON_BACKGROUND_COLOR
+                        })
+                        .corner_radius(BUTTON_CORNER_RADIUS),
                 )
                 .touch(move |ctx, info| match info.state {
                     TouchState::Begin => {

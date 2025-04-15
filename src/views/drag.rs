@@ -242,7 +242,9 @@ mod tests {
         let ui = state(
             || vec![],
             |states, _| {
-                rectangle(CLEAR_COLOR).drag(move |ctx, _delta, state, _| ctx[states].push(state))
+                rectangle()
+                    .color(CLEAR_COLOR)
+                    .drag(move |ctx, _delta, state, _| ctx[states].push(state))
             },
         );
         let size = (100.0, 100.0).into();

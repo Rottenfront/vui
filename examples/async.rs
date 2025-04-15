@@ -1,8 +1,8 @@
-use rui::*;
 use std::{
     thread::{sleep, spawn},
     time::Duration,
 };
+use vui::*;
 
 fn main() {
     state(

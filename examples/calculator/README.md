@@ -52,7 +52,7 @@ Create a new instance with default settings:
 
 ```rust
 use calculator::Calculator;
-use rui::*;
+use vui::*;
 
 fn main() {
     Calculator::new()
@@ -191,6 +191,6 @@ MIT
 
 This calculator uses the following Rust crates:
 
-- `rui` for the user interface
+- `vui` for the user interface
 - `enterpolation` for color gradients
 - `palette` for color management

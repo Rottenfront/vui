@@ -1,9 +1,8 @@
-use rui::*;
+use vui::*;
 
 fn main() {
-    zstack((
+    vui(zstack((
         "This is a test.",
         circle().color(RED_HIGHLIGHT).padding(Auto),
-    ))
-    .run()
+    )));
 }

@@ -12,7 +12,8 @@ fn lerp(x: f64, a: f64, b: f64) -> f64 {
 /// Knob for controlling a 0 to 1 floating point parameter.
 pub fn knob(value: impl Binding<f64>) -> impl View {
     zstack((
-        circle(CLEAR_COLOR)
+        circle()
+            .color(CLEAR_COLOR)
             .drag_s(value, move |v, delta, _, _| {
                 *v = (*v + (delta.x + delta.y) / 400.0).clamp(0.0, 1.0)
             })

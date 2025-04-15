@@ -1,7 +1,7 @@
 mod calculator;
 use calculator::Calculator;
 
-use rui::*;
+use vui::*;
 
 fn main() {
     Calculator::new()

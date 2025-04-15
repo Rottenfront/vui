@@ -4,7 +4,7 @@ use std::convert::TryFrom;
 use std::sync::Arc;
 use std::time::Instant;
 
-use rui::*;
+use vui::*;
 
 /// Type alias for MIDI note identifiers (0-127)
 pub type MidiNoteId = u8;

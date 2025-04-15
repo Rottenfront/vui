@@ -5,7 +5,7 @@ edition = "2024"
 
 [dependencies]
 log = "0.4"
-vello = "0.4.0"
+vello = { path = "../vello/vello" }
 anyhow = "1.0.96"
 pollster = "0.4.0"
 winit = "0.30.9"
@@ -14,6 +14,8 @@ parley = { path = "../parley/parley", default-features = true, features = [
 ] }
 accesskit = "0.18"
 accesskit_winit = "0.24"
+lazy_static = "1.4.0"
+env_logger = "0.10.0"
 
 [target.'cfg(target_os = "android")'.dependencies]
 winit = { version = "0.30.9", features = ["android-native-activity"] }

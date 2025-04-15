@@ -5,6 +5,6 @@ edition = "2021"
 publish = false
 
 [dependencies]
-rui = { workspace = true }
+vui = { workspace = true }
 palette = "0.7.6"
 enterpolation = "0.2"

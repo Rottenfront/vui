@@ -1,9 +1,9 @@
-use rui::*;
 use rust_search::SearchBuilder;
 use serde_json::{Map, Value};
 use std::collections::{HashSet, VecDeque};
 use std::fs;
 use std::sync::Arc;
+use vui::*;
 
 // Function to find and extract flip cards from JSON data
 fn find_flip_cards(value: &Value) -> Vec<Value> {

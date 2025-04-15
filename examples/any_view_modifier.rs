@@ -1,4 +1,4 @@
-use rui::*;
+use vui::*;
 
 trait MyMod {
     fn my_modifier(self) -> AnyView;

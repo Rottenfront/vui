@@ -97,6 +97,8 @@ pub struct Context {
     /// Lock the cursor in position. Useful for dragging knobs.
     pub(crate) grab_cursor: bool,
 
+    pub(crate) prev_grab_cursor: bool,
+
     pub font_ctx: FontContext,
 }
 
@@ -119,7 +121,7 @@ impl Context {
             mouse_buttons: Default::default(),
             key_mods: Default::default(),
             focused_id: None,
-            window_title: "rui".into(),
+            window_title: "vui".into(),
             fullscreen: false,
             state_map: HashMap::new(),
             dirty: false,
@@ -130,6 +132,7 @@ impl Context {
             window_size: Size::default(),
             root_offset: Vec2::ZERO,
             grab_cursor: false,
+            prev_grab_cursor: false,
             font_ctx: FontContext::new(),
         }
     }

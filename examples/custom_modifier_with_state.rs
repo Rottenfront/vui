@@ -1,10 +1,10 @@
-use rui::*;
+use vui::*;
 
 // This example shows a modifier that has state for
 // managing an animation.
 
 struct MyState {
-    offset: f32,
+    offset: f64,
 }
 
 impl Default for MyState {
@@ -17,7 +17,7 @@ trait MyMod: View + Sized {
     fn my_modifier(self) -> impl View {
         state(MyState::default, move |s, cx| {
             self.clone()
-                .offset(LocalOffset::new(0.0, cx[s].offset))
+                .offset(Vec2::new(0.0, cx[s].offset))
                 .anim(move |cx, _| {
                     cx[s].offset *= 0.9;
                 })

@@ -86,7 +86,7 @@ where
 /// For example:
 ///
 /// ```no_run
-/// # use rui::*;
+/// # use vui::*;
 ///
 /// #[derive(Debug, Default)]
 /// struct MyState {
@@ -94,7 +94,7 @@ where
 /// }
 ///
 /// fn main() {
-///     rui(state(MyState::default, |state, ctx| {
+///     vui(state(MyState::default, |state, ctx| {
 ///         vstack((
 ///             format!("value: {:?}", ctx[state]).padding(Auto),
 ///             map(

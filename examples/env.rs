@@ -1,4 +1,4 @@
-use rui::*;
+use vui::*;
 
 #[derive(Clone, Copy)]
 enum MyControlType {

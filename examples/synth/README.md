@@ -14,7 +14,7 @@ A simple MIDI synthesizer built with Rust, featuring a virtual piano keyboard in
 
 ## Dependencies
 
-- `rui`: For the user interface
+- `vui`: For the user interface
 - `rodio`: For audio synthesis and playback
 - `palette`: For color management
 - `enterpolation`: For value interpolation
@@ -55,6 +55,6 @@ MIT
 
 This calculator uses the following Rust crates:
 
-- `rui` for the user interface
+- `vui` for the user interface
 - `enterpolation` for color gradients
 - `palette` for color management

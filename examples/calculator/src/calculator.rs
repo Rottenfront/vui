@@ -4,7 +4,7 @@
 
 use enterpolation::{linear::ConstEquidistantLinear, Generator};
 use palette::LinSrgb;
-use rui::*;
+use vui::*;
 
 /// Represents the state of the clear button functionality.
 /// Used to toggle between Clear (C) and All Clear (AC) modes.

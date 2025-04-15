@@ -1,5 +1,4 @@
 use crate::*;
-use accesskit::Role;
 use std::marker::PhantomData;
 
 /// Modifiers common to all views.
@@ -156,7 +155,7 @@ pub trait Modifiers: View + Sized {
     ///
     /// #### Example
     /// ```rust
-    /// use rui::*;
+    /// use vui::*;
     /// rectangle()
     ///     .touch(move |_, info| match info.state {
     ///         TouchState::Begin => { println!("Touched") }
